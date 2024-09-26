@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FYCWS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/main-logo.png" type="image/png">
+</head>
+<body>
+    <nav>
+        <img src="img/main-logo.png" alt="FYCWS" width="80px">
+        <div class="align">
+            <button onclick="window.open('/')">
+                Home
+            </button>
+            <button onclick="window.open('/store.html')">
+                Store
+            </button>
+            <button onclick="window.open('/events.html')">
+                Events
+            </button>
+            <!-- <span id="nav-change-me">
+                <button>
+                    API
+                </button>
+            </span> -->
+        </div>
+    </nav>
+
+    <br>
+    <br>
+
+    <center>
+        <div class="gradient-card">
+            <main>
+                Browse for <strong>professionalism</strong>
+            </main>
+            <br>
+            Fetch for <strong>Awesome</strong>!
+            <br>
+            <br>
+
+            <!-- <button class="card" onclick="root.pageManager().request('godot')">
+                <img src="service/apps/godot/app_icon.png" alt="Godot 4" style="width: 70px;">
+                <p>Godot 4</p>
+            </button> -->
+            <button class="card" onclick="root.pageManager().request('opsr-ja')">
+                <img src="img/OPSR-JA.png" alt="Godot 4" style="width: 70px;">
+                <p>OPSR-JA</p>
+            </button>
+        </div>
+    </center>
+</body>
+<script src="/service/api.js"></script>
+<script src="ui-manager.js"></script>
+<script>
+    const root = FYCWS();
+</script>
+</html>

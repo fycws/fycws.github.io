@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FYCWS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/main-logo.png" type="image/png">
+    <script>
+        function add_item(icon, title, description, href){
+            var html = `
+
+            <button onclick="window.open('${href}')" style="height: 100px;width: 90%;" class="card item">
+                        <div style="float: left;width: 30%;height: 80px;">
+                <img src="${icon}" alt="OPSR-JA icon" style="width: 70px">
+            </div>
+            <div style="float: right;width: 70%;height: 80px;text-align:left;">
+                <h1>
+                    ${title}
+                </h1>
+                <p>
+                    ${description}
+                </p>
+            </div>
+            </button><br><br>
+            `;
+            document.getElementById('search-field').innerHTML += html;
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <img src="img/main-logo.png" alt="FYCWS" width="80px">
+        <div class="align">
+            <button onclick="window.open('/')">
+                Home
+            </button>
+            <button onclick="window.open('/store.html')">
+                Store
+            </button>
+            <button onclick="window.open('/events.html')">
+                Events
+            </button>
+            <!-- <span id="nav-change-me">
+                <button>
+                    API
+                </button>
+            </span> -->
+        </div>
+    </nav>
+
+    <br>
+    <br>
+
+    <center>
+        <input type="search" id="s" name="search" placeholder="search" onkeyup="search()">
+    </center>
+    <br><br>
+
+    <center id="search-field">
+        
+    </center>
+</body>
+<script src="/service/api.js"></script>
+<script>
+    add_item('img/OPSR-JA.png', 'OPSR-JA', 'OPSR-JA stands for OpenSource Realism - Java which is developed by ghgltggamer in order to provide', 'service/addons/opsr-ja/');
+</script>
+<script src="ui-manager.js"></script>
+<script>
+    
+    // console.log(arr)
+    function search(){
+        var s = document.getElementById('s');
+        var arr = document.getElementsByClassName('item');
+        for (var i = 0;arr.length > i;i++){
+            if (arr[i].innerHTML.toLowerCase().includes(s.value.toLowerCase())){
+                arr[i].style.display = 'block';
+            }
+            else {
+                arr[i].style.display = 'none';
+            }
+        }
+    }
+</script>
+
+</html>

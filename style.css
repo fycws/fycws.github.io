@@ -1,0 +1,189 @@
+*{
+    transition: 0.5s;
+    -webkit-tap-highlight-color: transparent;
+}
+body{
+    background-color: whitesmoke;
+    margin: 0px;
+    font-family: Arial;
+    color: dimgray;
+}
+
+
+nav{
+    background-color: white;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+
+nav .align{
+    position: absolute;
+    left: 50%;
+}
+
+
+nav .align button{
+    background-color: white;
+    border: 0px solid white;
+    color: dimgray;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}
+
+
+nav .align button:hover{
+    background: linear-gradient(#00a7da, #008fbb);
+    color: white;
+}
+
+
+
+
+.gradient-card{
+    min-height: 200px;
+    max-height: 1000px;
+    width: 70%;
+    background-image: linear-gradient(white, whitesmoke);
+    background-size: cover;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+
+main{
+    font-size: 20px;
+}
+
+
+strong{
+    color: #008fbb;
+}
+
+
+.card{
+    height: 130px;
+    width: 100px;
+    transition: .5s;
+    background-image: linear-gradient(white 50%, whitesmoke);
+    /* background-size: cover; */
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 1  20px;
+    font-size: 13px;
+    border: 0px solid silver;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, .4);
+}
+
+.card img{
+    width: 70px;
+    border-radius: 20px;
+}
+
+
+.option-card{
+    border: 1px solid dimgray;
+    border-radius: 0px;
+    width: 200px;
+}
+
+
+.link-card{
+    background: none;width: auto;height: 17px;padding: none;border-radius: 0px;
+}
+
+.link-card:hover{
+    transform: none;
+    box-shadow: none;
+}
+
+
+.win64{
+    background: linear-gradient(rgb(2, 121, 212), rgb(0, 94, 165));
+    color: white;
+    cursor: crosshair;
+    border: 1px solid rgb(0, 145, 255);
+    border-bottom-color: rgb(0, 67, 118);
+}
+
+.x86{
+    background: linear-gradient(rgb(255, 196, 0), rgb(198, 109, 0));
+    color: white;
+    cursor: crosshair;
+    border: 1px solid rgb(255, 242, 0);
+    border-bottom-color: rgb(179, 0, 0);
+}
+
+.apk{
+    background: linear-gradient(rgb(2, 212, 128), rgb(0, 165, 77));
+    color: white;
+    cursor: crosshair;
+    border: 1px solid rgb(0, 255, 0);
+    border-bottom-color: rgb(0, 118, 91);
+}
+
+.osx{
+    background: linear-gradient(rgb(146, 146, 146), rgb(66, 66, 66));
+    color: white;
+    cursor: crosshair;
+    border: 1px solid rgb(196, 196, 196);
+    border-bottom-color: rgb(33, 33, 33);
+}
+
+
+
+input{
+    height: 30px;
+    width: 250px;
+    transition: .5s;
+    background-image: linear-gradient(white 50%, whitesmoke);
+    /* background-size: cover; */
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 1  20px;
+    font-size: 13px;
+    outline: none;
+    padding: 10px;
+    border: 0px solid silver;
+}
+
+input:hover{
+    transform: translateY(-10);
+}
+
+input:focus{
+    border: 2px solid skyblue;
+}
+
+
+
+.c2{
+    height: 30px;
+    width: 30px;
+    transition: .5s;
+    background-image: linear-gradient(white 50%, whitesmoke);
+    /* background-size: cover; */
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 1  20px;
+    font-size: 13px;
+    outline: none;
+    padding: 10px;
+    border: 0px solid silver;
+}
+
+.c2:hover{
+    transform: translateY(-10);
+}
+
+.c2:focus{
+    border: 2px solid skyblue;
+}
